@@ -13,7 +13,7 @@
   "eslintConfig": {
     "plugins": ["import"],
     "rules": {
-      "import/no-useless-path-segments": ["error", {"noUselessIndex": true}],
+      "import/no-useless-path-segments": ["error", {"noUselessIndex": true, "commonjs": true}],
       "no-console": "error"
     }
   }
