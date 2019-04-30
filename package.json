@@ -1,0 +1,20 @@
+{
+  "name": "test-import-no-useless-path-segments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "eslintConfig": {
+    "plugins": ["import"],
+    "rules": {
+      "import/no-useless-path-segments": ["error", {"noUselessIndex": true}],
+      "no-console": "error"
+    }
+  }
+}
